@@ -35,6 +35,10 @@ form .question-input {
     padding-bottom: 7px;
 }
 
+.jot-form label {
+    display: block;
+}
+
 /*
 form .question-input input {
     width: 371px;
