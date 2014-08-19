@@ -22,12 +22,12 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             basic: {
-                src: ['js/user/main.js'],
-                dest: 'build/release.min.js'
+                src: ['js/lib/responsiveslides.min.js', 'js/user/main.js'],
+                dest: 'build/release-lessons.min.js'
             },
             extras: {
                 src: ['js/lib/jquery-1.8.3.min.js', 'js/lib/bootstrap.min.js', 'scripts/lib/holder.js'],
-                dest: 'build/libs.min.js'
+                dest: 'build/libs-lessons.min.js'
             }
         },
         uglify: {
@@ -35,8 +35,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'build/libs.min.js': ['build/libs.min.js'],
-                    'build/release.min.js': ['build/release.min.js']
+                    'build/libs-lessons.min.js': ['build/libs-lessons.min.js'],
+                    'build/release-lessons.min.js': ['build/release-lessons.min.js']
                 }
             }
         },
